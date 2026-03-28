@@ -49,9 +49,11 @@ const VoletIntervenants = () => {
         {/* Description */}
         <motion.div variants={itemVariants} className="mb-10">
           <p className="font-corps text-lg text-gray-700 leading-relaxed">
-            Des formations continues, conférences et coaching professionnel conçus pour renforcer
-            les compétences des intervenant·e·s. Nous offrons un accompagnement de haut niveau
-            basé sur les meilleures pratiques et la recherche actuelle en santé mentale.
+            Des formations continues, conférences et coaching professionnel conçus pour contribuer
+            à l{"'"}actualisation des pratiques par la vulgarisation de données actuelles sur le
+            fonctionnement humain. Nous offrons un accompagnement de haut niveau favorisant
+            l{"'"}intégration des connaissances issues de la recherche dans la pratique quotidienne
+            des intervenant·e·s.
           </p>
         </motion.div>
 
@@ -112,10 +114,10 @@ const VoletIntervenants = () => {
           variants={itemVariants}
           className="p-8 bg-gradient-to-r from-as-bleu-vif to-as-bleu-profond rounded-lg text-white text-center"
         >
-          <h3 className="font-titre text-2xl font-bold mb-3">
+          <h3 className="font-titre text-2xl font-bold text-as-soleil-doux mb-3">
             Besoin de formation pour votre équipe?
           </h3>
-          <p className="font-corps text-white/90 mb-6 max-w-lg mx-auto">
+          <p className="font-corps text-as-creme mb-6 max-w-lg mx-auto">
             Contactez-nous pour discuter de vos besoins en formation
             et planifier un programme adapté à votre réalité professionnelle.
           </p>

@@ -38,15 +38,15 @@ export default function Problematique() {
     {
       titre: "Désinformation numérique",
       description:
-        "Fausses informations affectant directement les comportements, les croyances et les décisions des individus, particulièrement chez les jeunes adultes.",
-      source: "Sources médias spécialisées, analyses récentes",
+        "Diffusion de contenus faux ou trompeurs influençant les croyances, les comportements et les prises de décision, avec des effets particulièrement marqués chez les jeunes adultes fortement exposés aux environnements numériques.",
+      source: "Ma, I. et al. (2025). Understanding the impact of misinformation on adolescents. Nature Human Behaviour. DOI: 10.1038/s41562-025-02338-8",
       icone: "📱",
     },
     {
       titre: "Violence relationnelle et conjugale",
       description:
-        "Taux de violence conjugale de 2 à 3 fois supérieurs à la moyenne québécoise dans certaines régions. Tendance croissante depuis 10 ans.",
-      source: "MSP, Statistiques sur la violence conjugale, 2023",
+        "Taux de violence conjugale de 2 à 3 fois supérieurs à la moyenne québécoise sur la Côte-Nord. À l\u2019échelle provinciale, la tendance est croissante depuis les 10 dernières années, accentuée depuis la pandémie.",
+      source: "Statistique Québec — Violence en contexte conjugal, 2024; MSP, Statistiques sur la violence conjugale, 2023",
       icone: "💔",
     },
     {
