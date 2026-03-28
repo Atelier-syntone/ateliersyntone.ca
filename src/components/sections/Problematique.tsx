@@ -69,7 +69,7 @@ export default function Problematique() {
       >
         {/* Titre de section */}
         <motion.div className="mb-12 md:mb-16" variants={itemVariants}>
-          <h2 className="font-titre text-3xl sm:text-4xl lg:text-5xl font-bold text-as-soleil-doux mb-4">
+          <h2 className="font-titre text-3xl sm:text-4xl lg:text-5xl font-bold text-as-bleu-profond mb-4">
             Pourquoi agir maintenant
           </h2>
           <div className="w-16 h-1 bg-gradient-to-r from-as-corail-doux to-as-soleil-doux rounded-full" />

@@ -60,7 +60,7 @@ export default function Impact() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="section-titre text-as-soleil-doux mb-12 md:mb-16">
+          <h2 className="section-titre text-as-bleu-profond mb-12 md:mb-16">
             Notre impact
           </h2>
         </motion.div>

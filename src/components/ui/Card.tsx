@@ -10,6 +10,7 @@ interface CardProps {
   children: React.ReactNode;
   variante?: 'defaut' | 'sureleve' | 'accent';
   className?: string;
+  style?: React.CSSProperties;
 }
 
 const variantesStyles = {
@@ -22,6 +23,7 @@ export default function Card({
   children,
   variante = 'defaut',
   className,
+  style,
 }: CardProps) {
   return (
     <div
@@ -30,6 +32,7 @@ export default function Card({
         variantesStyles[variante],
         className
       )}
+      style={style}
     >
       {children}
     </div>

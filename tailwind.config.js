@@ -4,6 +4,25 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  safelist: [
+    /* Bordures de couleur utilisées dynamiquement dans les cartes Volets */
+    'border-as-vert-lien',
+    'border-as-soleil-doux',
+    'border-as-bleu-vif',
+    'border-as-corail-doux',
+    'bg-as-vert-lien/10',
+    'bg-as-soleil-doux/10',
+    'bg-as-bleu-vif/10',
+    'bg-as-corail-doux/10',
+    'text-as-vert-lien',
+    'text-as-soleil-doux',
+    'text-as-bleu-vif',
+    'text-as-corail-doux',
+    'border-as-vert-lien/30',
+    'border-as-soleil-doux/30',
+    'border-as-bleu-vif/30',
+    'border-as-corail-doux/30',
+  ],
   theme: {
     extend: {
       /* Palette Atelier Syntone */

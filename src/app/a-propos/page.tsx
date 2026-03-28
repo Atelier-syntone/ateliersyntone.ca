@@ -27,7 +27,7 @@ export default function AProposPage() {
             {/* Notre histoire */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="font-titre text-3xl font-bold text-as-soleil-doux mb-6">
+                <h2 className="font-titre text-3xl font-bold text-as-bleu-profond mb-6">
                   Notre histoire
                 </h2>
                 <div className="space-y-5 font-corps text-as-gris-fonce text-lg leading-relaxed">
@@ -92,7 +92,7 @@ export default function AProposPage() {
 
             {/* Direction générale */}
             <div>
-              <h2 className="font-titre text-3xl font-bold text-as-soleil-doux mb-8">
+              <h2 className="font-titre text-3xl font-bold text-as-bleu-profond mb-8">
                 Direction générale
               </h2>
               <div className="bg-white rounded-syntone p-8 lg:p-12 border-l-4 border-as-soleil-doux">
@@ -128,7 +128,7 @@ export default function AProposPage() {
 
             {/* Conseil d'administration */}
             <div>
-              <h2 className="font-titre text-3xl font-bold text-as-soleil-doux mb-8">
+              <h2 className="font-titre text-3xl font-bold text-as-bleu-profond mb-8">
                 Conseil d{"'"}administration
               </h2>
               <div className="bg-as-gris-clair rounded-syntone p-8 lg:p-12">

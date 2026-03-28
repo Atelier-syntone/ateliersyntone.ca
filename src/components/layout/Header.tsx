@@ -23,7 +23,7 @@ export default function Header() {
           <a href="/" className="flex items-center gap-3 focus-syntone rounded-syntone">
             {/* Logo SVG */}
             <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center p-1">
-              <img src="/logo/logo-syntone.svg" alt="Logo Atelier Syntone" className="w-full h-full" />
+              <img src="/logo/logo-syntone.png" alt="Logo Atelier Syntone" className="w-full h-full object-contain" />
             </div>
             <div className="flex flex-col">
               <span className="font-titre text-lg sm:text-xl font-bold text-as-bleu-profond leading-tight">

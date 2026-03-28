@@ -75,9 +75,9 @@ h1, h2, h3, h4, h5, h6 {
     @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24;
   }
 
-  /* Titre de section — teinte dorée/soleil */
+  /* Titre de section — bleu profond sur fond clair, doré sur fond foncé */
   .section-titre {
-    @apply font-titre text-3xl sm:text-4xl lg:text-5xl font-bold text-as-soleil-doux mb-6;
+    @apply font-titre text-3xl sm:text-4xl lg:text-5xl font-bold text-as-bleu-profond mb-6;
   }
 
   /* Sous-titre de section */
