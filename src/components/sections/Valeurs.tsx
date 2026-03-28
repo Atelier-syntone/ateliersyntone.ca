@@ -64,13 +64,22 @@ const RigueurSymbol = () => (
 
 const EquiteSymbol = () => (
   <svg viewBox="0 0 48 48" className="w-12 h-12">
-    <path d="M24 8V18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-    <ellipse cx="24" cy="18" rx="14" ry="4" fill="none" stroke="currentColor" strokeWidth="2" />
-    <circle cx="12" cy="28" r="6" fill="none" stroke="currentColor" strokeWidth="2" />
-    <circle cx="36" cy="28" r="6" fill="none" stroke="currentColor" strokeWidth="2" />
-    <path d="M12 34V40" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-    <path d="M36 34V40" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-    <path d="M10 40H14M34 40H38" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+    {/* Pilier central */}
+    <path d="M24 8V40" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+    {/* Base */}
+    <path d="M18 40H30" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
+    {/* Poutre horizontale */}
+    <path d="M8 16H40" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+    {/* Chaînes gauche */}
+    <path d="M12 16V26" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+    {/* Chaînes droite */}
+    <path d="M36 16V26" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+    {/* Plateau gauche */}
+    <path d="M5 26C5 26 8 30 12 30C16 30 19 26 19 26" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" />
+    {/* Plateau droit */}
+    <path d="M29 26C29 26 32 30 36 30C40 30 43 26 43 26" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" />
+    {/* Sommet décoratif */}
+    <circle cx="24" cy="8" r="2.5" fill="none" stroke="currentColor" strokeWidth="2" />
   </svg>
 );
 
