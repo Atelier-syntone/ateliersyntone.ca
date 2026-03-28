@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ========================================
+   Design System — Atelier Syntone
+   ======================================== */
+
+:root {
+  /* Primaires */
+  --as-bleu-profond:    #1A2E4A;
+  --as-bleu-vif:        #2D6EA0;
+  --as-bleu-clair:      #6AABCC;
+
+  /* Secondaires */
+  --as-terre-chaude:    #8B6845;
+  --as-soleil-doux:     #E8B84B;
+  --as-creme:           #F7F3EE;
+
+  /* Accents */
+  --as-vert-lien:       #3A8C6E;
+  --as-corail-doux:     #D96B5A;
+
+  /* Neutres */
+  --as-gris-fonce:      #2C2C2C;
+  --as-gris-moyen:      #6B6B6B;
+  --as-gris-clair:      #E8E8E8;
+
+  /* Typographie — tailles de base */
+  --font-titre: 'Lora', Georgia, serif;
+  --font-corps: 'Source Sans 3', system-ui, sans-serif;
+  --font-accent: 'DM Sans', system-ui, sans-serif;
+}
+
+/* ========================================
+   Base — Réinitialisation et typographie
+   ======================================== */
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-corps);
+  color: var(--as-gris-fonce);
+  background-color: var(--as-creme);
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-titre);
+  color: var(--as-bleu-profond);
+  line-height: 1.3;
+}
+
+/* ========================================
+   Utilitaires Atelier Syntone
+   ======================================== */
+
+@layer utilities {
+  /* Focus accessible — anneau visible */
+  .focus-syntone {
+    @apply focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-as-bleu-vif;
+  }
+
+  /* Transition douce par défaut */
+  .transition-syntone {
+    @apply transition-all duration-300 ease-in-out;
+  }
+
+  /* Conteneur de section standard */
+  .section-container {
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24;
+  }
+
+  /* Titre de section — teinte dorée/soleil */
+  .section-titre {
+    @apply font-titre text-3xl sm:text-4xl lg:text-5xl font-bold text-as-soleil-doux mb-6;
+  }
+
+  /* Sous-titre de section */
+  .section-sous-titre {
+    @apply font-corps text-lg sm:text-xl text-as-gris-moyen max-w-2xl mb-12;
+  }
+}
+
+/* ========================================
+   Animations d'entrée (Framer Motion compatible)
+   ======================================== */
+
+@keyframes apparition-douce {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-apparition {
+  animation: apparition-douce 0.6s ease-out forwards;
+}
+
+/* ========================================
+   Accessibilité
+   ======================================== */
+
+/* Réduction du mouvement pour les personnes sensibles */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Lien d'évitement pour lecteurs d'écran */
+.skip-to-content {
+  @apply sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50
+         focus:px-4 focus:py-2 focus:bg-as-bleu-profond focus:text-white focus:rounded-syntone;
+}

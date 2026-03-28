@@ -1,0 +1,34 @@
+# Dépendances
+/node_modules
+/.pnp
+.pnp.js
+
+# Tests
+/coverage
+
+# Next.js
+/.next/
+/out/
+
+# Production
+/build
+
+# Variables d'environnement — NE JAMAIS COMMITTER
+.env*.local
+.env
+
+# Éditeurs et OS
+.DS_Store
+*.pem
+.vscode/
+.idea/
+
+# Turbopack
+.turbo
+
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
