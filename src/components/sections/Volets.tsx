@@ -98,7 +98,7 @@ export default function Volets() {
                 className="h-full"
               >
                 <Card
-                  className={`h-full flex flex-col border-t-4 ${style.border} hover:shadow-lg transition-syntone`}
+                  className="h-full flex flex-col border-t-4 hover:shadow-lg transition-syntone"
                   style={{ borderTopColor: style.borderColor }}
                 >
                   {/* Icône */}
