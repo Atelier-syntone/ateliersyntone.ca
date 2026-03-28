@@ -65,11 +65,29 @@ export default function Hero() {
 
         {/* Sous-titre */}
         <motion.p
-          className="font-corps text-lg sm:text-xl md:text-2xl text-as-creme/90 mb-8 md:mb-12 max-w-2xl mx-auto leading-relaxed"
+          className="font-corps text-lg sm:text-xl md:text-2xl text-as-creme/90 mb-6 md:mb-8 max-w-2xl mx-auto leading-relaxed"
           variants={itemVariants}
         >
           {SITE.description}
         </motion.p>
+
+        {/* Définition du nom */}
+        <motion.div
+          className="mb-8 md:mb-12 max-w-xl mx-auto"
+          variants={itemVariants}
+        >
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 text-as-creme/70 font-corps text-sm sm:text-base">
+            <span>
+              <span className="font-semibold text-as-soleil-doux/90">Atelier</span>
+              {' '}— approche active et pratique
+            </span>
+            <span className="hidden sm:inline text-as-creme/30">|</span>
+            <span>
+              <span className="font-semibold text-as-soleil-doux/90">Syntone</span>
+              {' '}— résonance et harmonie
+            </span>
+          </div>
+        </motion.div>
 
         {/* Boutons CTA */}
         <motion.div

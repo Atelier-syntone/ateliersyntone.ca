@@ -53,7 +53,7 @@ export default function Problematique() {
       titre: "Manque d\u2019outils pour les adultes significatifs",
       description:
         "Parents, éducateurs et praticiens manquent d\u2019outils pratiques et de formation continue pour intervenir et soutenir les jeunes.",
-      source: "Observations du terrain et besoins identifiés",
+      source: "Enqu\u00eate qu\u00e9b\u00e9coise sur la parentalit\u00e9, 2022 \u2014 Stress parental \u00e9lev\u00e9 et besoin d\u2019outils concrets pour g\u00e9rer les \u00e9motions et les relations familiales.",
       icone: "🤝",
     },
   ]
