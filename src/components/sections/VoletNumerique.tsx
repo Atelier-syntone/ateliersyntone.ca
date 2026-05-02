@@ -47,9 +47,8 @@ const VoletNumerique = () => {
         {/* Description */}
         <motion.div variants={itemVariants} className="mb-10">
           <p className="font-corps text-lg text-gray-700 leading-relaxed">
-            Des contenus numériques conçus pour démocratiser l{"'"}accès à l{"'"}éducation en santé mentale.
-            Notre approche combine rigueur scientifique et vulgarisation pour rejoindre un public aussi
-            large et diversifié que possible, directement sur les plateformes que vous utilisez au quotidien.
+            Création de contenus éducatifs vulgarisés et capsules de sensibilisation gratuites
+            accessibles sur nos réseaux sociaux.
           </p>
         </motion.div>
 
