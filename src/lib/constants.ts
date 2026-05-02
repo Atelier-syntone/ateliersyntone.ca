@@ -56,7 +56,7 @@ export const VOLETS = [
     titre: 'Sensibilisation numérique',
     trancheAge: 'Tout public',
     description:
-      'Création de contenus éducatifs vulgarisés, outils pédagogiques numériques, capsules de sensibilisation.',
+      'Création de contenus éducatifs vulgarisés et capsules de sensibilisation gratuites accessibles sur nos réseaux sociaux.',
     icone: '💻',
   },
 ] as const;

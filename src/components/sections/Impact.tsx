@@ -38,7 +38,7 @@ export default function Impact() {
       points: [
         "Renforcement du vivre-ensemble et des relations saines et égalitaires",
         "Soutien aux milieux scolaires, communautaires et familiaux",
-        "Accessibilité des services pour les populations de toutes les régions du Québec",
+        "Promouvoir l'accessibilité des savoirs et des services afin de soutenir leur appropriation par des personnes aux réalités variées",
       ],
     },
     {
@@ -46,7 +46,7 @@ export default function Impact() {
       points: [
         "Intervention cohérente à plusieurs niveaux : jeunes, adultes, professionnels, espace numérique",
         "Approche intégrée combinant prévention, éducation et outillage des milieux",
-        "Modèle transférable vers d'autres régions du Québec",
+        "Contribution à l'évolution des pratiques d'intervention et d'éducation en matière de développement humain",
       ],
     },
   ]
