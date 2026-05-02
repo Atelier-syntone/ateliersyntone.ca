@@ -6,6 +6,7 @@ export default function FormulaireContact() {
   const [enCours, setEnCours] = useState(false);
   const [statut, setStatut] = useState<'idle' | 'succes' | 'erreur'>('idle');
   const [messageErreur, setMessageErreur] = useState('');
+  const [consentement, setConsentement] = useState(false);
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -32,6 +33,7 @@ export default function FormulaireContact() {
 
       if (reponse.ok) {
         setStatut('succes');
+        setConsentement(false);
         // Réinitialiser le formulaire
         (e.target as HTMLFormElement).reset();
       } else {
@@ -135,10 +137,36 @@ export default function FormulaireContact() {
           />
         </div>
 
+        {/* Case de consentement */}
+        <div className="flex items-start gap-3">
+          <input
+            type="checkbox"
+            id="consentement"
+            name="consentement"
+            checked={consentement}
+            onChange={(e) => setConsentement(e.target.checked)}
+            required
+            className="mt-1 h-5 w-5 rounded border-as-gris-clair text-as-bleu-vif focus:ring-as-bleu-vif cursor-pointer flex-shrink-0"
+          />
+          <label htmlFor="consentement" className="font-corps text-sm text-as-gris-moyen leading-relaxed cursor-pointer">
+            J{"'"}accepte que mes renseignements personnels soient utilisés par
+            Atelier Syntone pour répondre à ma demande, conformément à
+            la{' '}
+            <a
+              href="/confidentialite"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-as-bleu-vif hover:text-as-bleu-profond underline transition-colors"
+            >
+              politique de confidentialité
+            </a>.
+          </label>
+        </div>
+
         {/* Bouton Envoyer */}
         <button
           type="submit"
-          disabled={enCours}
+          disabled={enCours || !consentement}
           className="w-full px-6 py-3 bg-as-bleu-vif hover:bg-as-bleu-profond text-as-creme font-corps font-semibold rounded-syntone transition-syntone focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-as-bleu-vif disabled:opacity-50 disabled:cursor-not-allowed"
           aria-label="Envoyer le formulaire de contact"
         >
