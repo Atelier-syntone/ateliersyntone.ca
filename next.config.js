@@ -1,4 +1,5 @@
 /** @type {import('next').NextConfig} */
+// Dépôt migré vers l'organisation GitHub Atelier-syntone
 const nextConfig = {
   // Optimisation des images
   images: {
