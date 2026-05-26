@@ -22,7 +22,6 @@ export const NAVIGATION = [
   { label: 'Volets', href: '/volets' },
   { label: 'Impact', href: '/impact' },
   { label: 'À propos', href: '/a-propos' },
-  { label: 'Contact', href: '/contact' },
 ] as const;
 
 /* Volets d'intervention */
