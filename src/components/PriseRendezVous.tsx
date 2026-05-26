@@ -1,74 +1,18 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 // ============================================================
-// Configuration Cal.com — À MODIFIER après création du compte
+// Configuration Cal.com
 // ============================================================
-// Remplacer par le nom d'utilisateur Cal.com d'Atelier Syntone
-// et le slug de l'événement de 30 minutes.
-// Exemple : si l'URL de réservation est https://cal.com/ateliersyntone/consultation
-// alors CAL_USERNAME = "ateliersyntone" et CAL_EVENT_SLUG = "consultation"
 const CAL_USERNAME = 'audreanne-paquin-gq9pzq';
 const CAL_EVENT_SLUG = '30min';
+// URL complète de l'iframe Cal.com avec paramètres d'intégration
+const CAL_EMBED_URL = `https://cal.com/${CAL_USERNAME}/${CAL_EVENT_SLUG}?embed&layout=month_view&theme=light`;
 // ============================================================
 
 export default function PriseRendezVous() {
   const [chargement, setChargement] = useState(true);
-  const [erreurChargement, setErreurChargement] = useState(false);
-
-  useEffect(() => {
-    // Charger le script d'intégration Cal.com
-    const script = document.createElement('script');
-    script.src = 'https://app.cal.com/embed/embed.js';
-    script.async = true;
-
-    script.onload = () => {
-      // Initialiser l'embed Cal.com une fois le script chargé
-      if (typeof (window as any).Cal !== 'undefined') {
-        (window as any).Cal('init', {
-          origin: 'https://app.cal.com',
-        });
-
-        (window as any).Cal('inline', {
-          calLink: `${CAL_USERNAME}/${CAL_EVENT_SLUG}`,
-          elementOrSelector: '#cal-inline-embed',
-          config: {
-            layout: 'month_view',
-            theme: 'light',
-          },
-        });
-
-        // Écouter quand le calendrier est prêt
-        (window as any).Cal('on', {
-          action: 'linkReady',
-          callback: () => {
-            setChargement(false);
-          },
-        });
-
-        // Fallback : retirer le chargement après 5 secondes
-        setTimeout(() => setChargement(false), 5000);
-      } else {
-        setErreurChargement(true);
-        setChargement(false);
-      }
-    };
-
-    script.onerror = () => {
-      setErreurChargement(true);
-      setChargement(false);
-    };
-
-    document.head.appendChild(script);
-
-    return () => {
-      // Nettoyage du script au démontage
-      if (document.head.contains(script)) {
-        document.head.removeChild(script);
-      }
-    };
-  }, []);
 
   return (
     <div>
@@ -82,8 +26,8 @@ export default function PriseRendezVous() {
         nous pouvons vous accompagner.
       </p>
 
-      {/* Indicateur de chargement */}
-      {chargement && !erreurChargement && (
+      {/* Indicateur de chargement — visible tant que l'iframe n'a pas chargé */}
+      {chargement && (
         <div className="flex items-center justify-center py-16">
           <div className="flex flex-col items-center gap-4">
             <div className="w-10 h-10 border-4 border-as-bleu-clair border-t-as-bleu-vif rounded-full animate-spin" />
@@ -94,29 +38,28 @@ export default function PriseRendezVous() {
         </div>
       )}
 
-      {/* Message d'erreur si Cal.com ne charge pas */}
-      {erreurChargement && (
-        <div className="bg-as-corail-doux/10 border border-as-corail-doux/30 rounded-syntone p-6 text-center">
-          <p className="font-corps text-as-gris-fonce mb-3">
-            Le calendrier de réservation n{"'"}est pas disponible pour le moment.
-          </p>
-          <a
-            href={`https://cal.com/${CAL_USERNAME}/${CAL_EVENT_SLUG}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block px-6 py-3 bg-as-vert-lien hover:bg-as-vert-lien/90 text-white font-corps font-semibold rounded-syntone transition-syntone"
-          >
-            Réserver sur Cal.com
-          </a>
-        </div>
-      )}
+      {/* Iframe Cal.com — approche fiable et compatible Next.js/Vercel */}
+      <div className={`rounded-syntone overflow-hidden ${chargement ? 'h-0 overflow-hidden' : ''}`}>
+        <iframe
+          src={CAL_EMBED_URL}
+          title="Réserver une consultation — Atelier Syntone"
+          style={{ width: '100%', height: '660px', border: 'none' }}
+          loading="lazy"
+          onLoad={() => setChargement(false)}
+        />
+      </div>
 
-      {/* Conteneur de l'embed Cal.com */}
-      <div
-        id="cal-inline-embed"
-        className={`rounded-syntone overflow-hidden ${chargement ? 'h-0 overflow-hidden' : 'min-h-[500px]'}`}
-        style={{ width: '100%' }}
-      />
+      {/* Lien alternatif en cas de problème */}
+      <div className="mt-4 text-center">
+        <a
+          href={`https://cal.com/${CAL_USERNAME}/${CAL_EVENT_SLUG}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-corps text-sm text-as-bleu-vif hover:text-as-bleu-profond underline transition-syntone"
+        >
+          Le calendrier ne s{"'"}affiche pas? Réserver directement sur Cal.com →
+        </a>
+      </div>
 
       {/* Note sous le calendrier */}
       <div className="mt-6 bg-as-bleu-profond/5 rounded-syntone p-4">
