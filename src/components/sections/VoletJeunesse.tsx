@@ -64,44 +64,57 @@ const VoletJeunesse = () => {
           </p>
         </motion.div>
 
-        {/* Approche de groupe */}
+        {/* Nos services */}
         <motion.div variants={itemVariants} className="mb-12">
           <h3 className="font-titre text-2xl font-bold text-as-bleu-profond mb-6">
-            Services de groupe
+            Nos services
           </h3>
-          <p className="font-corps text-lg text-gray-700 leading-relaxed mb-6">
-            Nos ateliers sont offerts en format de groupe afin de maximiser
-            l{"'"}accessibilité dans toutes les régions du Québec. Cette approche communautaire
-            permet de rejoindre un plus grand nombre de jeunes tout en favorisant les échanges
-            et le soutien entre pairs.
-          </p>
+          <div className="space-y-5 mb-8">
+            <p className="font-corps text-lg text-gray-700 leading-relaxed">
+              Nos ateliers sont offerts en groupe afin d{"'"}aller à la rencontre des jeunes dans
+              leurs milieux de vie et de rendre accessibles des connaissances sur le développement
+              humain et les relations.
+            </p>
+            <p className="font-corps text-lg text-gray-700 leading-relaxed">
+              Selon les besoins du milieu, les ateliers peuvent notamment aborder les stéréotypes
+              de genre et leurs impacts sur le développement, le masculinisme ainsi que les
+              dynamiques de pouvoir et de contrôle dans les relations. Ces sujets sont abordés à
+              partir de données probantes et de repères adaptés à l{"'"}âge pour déconstruire
+              certaines idées reçues, prévenir la désinformation et favoriser des relations plus
+              saines et respectueuses.
+            </p>
+            <p className="font-corps text-lg text-gray-700 leading-relaxed">
+              Le groupe devient ainsi un espace pour apprendre, questionner et construire de
+              nouveaux repères, tout en soutenant le développement du pouvoir d{"'"}agir des jeunes.
+            </p>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="p-5 bg-white rounded-lg border border-as-vert-lien/20 shadow-sm">
               <div className="w-10 h-10 rounded-full bg-as-vert-lien/10 flex items-center justify-center mb-3">
                 <svg className="w-5 h-5 text-as-vert-lien" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                 </svg>
               </div>
-              <h4 className="font-titre font-semibold text-as-bleu-profond mb-1">Accessibilité</h4>
-              <p className="font-corps text-sm text-gray-600">Rejoindre les communautés de toutes les régions</p>
+              <h4 className="font-titre font-semibold text-as-bleu-profond mb-1">Ancrés dans les milieux de vie</h4>
+              <p className="font-corps text-sm text-gray-600">Des ateliers offerts directement à l{"'"}école, en organisme communautaire ou en espace jeunesse</p>
             </div>
             <div className="p-5 bg-white rounded-lg border border-as-vert-lien/20 shadow-sm">
               <div className="w-10 h-10 rounded-full bg-as-vert-lien/10 flex items-center justify-center mb-3">
                 <svg className="w-5 h-5 text-as-vert-lien" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                 </svg>
               </div>
-              <h4 className="font-titre font-semibold text-as-bleu-profond mb-1">Soutien entre pairs</h4>
-              <p className="font-corps text-sm text-gray-600">Favoriser les échanges et la solidarité</p>
+              <h4 className="font-titre font-semibold text-as-bleu-profond mb-1">Des repères fondés sur la science</h4>
+              <p className="font-corps text-sm text-gray-600">Des contenus appuyés sur des données probantes et adaptés à l{"'"}âge, pour prévenir la désinformation</p>
             </div>
             <div className="p-5 bg-white rounded-lg border border-as-vert-lien/20 shadow-sm">
               <div className="w-10 h-10 rounded-full bg-as-vert-lien/10 flex items-center justify-center mb-3">
                 <svg className="w-5 h-5 text-as-vert-lien" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
-              <h4 className="font-titre font-semibold text-as-bleu-profond mb-1">Modèle adapté</h4>
-              <p className="font-corps text-sm text-gray-600">Un modèle communautaire pensé pour le contexte économique</p>
+              <h4 className="font-titre font-semibold text-as-bleu-profond mb-1">Pouvoir d{"'"}agir</h4>
+              <p className="font-corps text-sm text-gray-600">Un espace pour apprendre, questionner et construire ses propres repères relationnels</p>
             </div>
           </div>
         </motion.div>

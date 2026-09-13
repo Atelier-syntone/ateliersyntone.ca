@@ -19,7 +19,7 @@ export const SITE = {
 export const NAVIGATION = [
   { label: 'Accueil', href: '/' },
   { label: 'Mission', href: '/mission' },
-  { label: 'Volets', href: '/volets' },
+  { label: 'Services', href: '/volets' },
   { label: 'Impact', href: '/impact' },
   { label: 'À propos', href: '/a-propos' },
 ] as const;
@@ -47,7 +47,7 @@ export const VOLETS = [
     titre: 'Intervenant·e·s',
     trancheAge: 'Professionnel·le·s',
     description:
-      'Formations continues, conférences et espaces de réflexion, coaching professionnel de groupe.',
+      'Formations continues, conférences et accompagnement réflexif des milieux.',
     icone: '🤝',
   },
   {

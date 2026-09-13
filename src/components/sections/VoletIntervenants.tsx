@@ -47,13 +47,20 @@ const VoletIntervenants = () => {
         </motion.div>
 
         {/* Description */}
-        <motion.div variants={itemVariants} className="mb-10">
+        <motion.div variants={itemVariants} className="mb-10 space-y-5">
           <p className="font-corps text-lg text-gray-700 leading-relaxed">
-            Des formations continues, conférences et coaching professionnel conçus pour contribuer
-            à l{"'"}actualisation des pratiques par la vulgarisation de données actuelles sur le
-            fonctionnement humain. Nous offrons un accompagnement de haut niveau favorisant
-            l{"'"}intégration des connaissances issues de la recherche dans la pratique quotidienne
-            des intervenant·e·s.
+            Nous accompagnons les professionnel·le·s, les équipes et les milieux qui souhaitent
+            faire le pont entre les connaissances issues de la recherche et les réalités de leur
+            pratique. Nos services combinent vulgarisation de données probantes, réflexion
+            professionnelle et mise en application concrète afin de soutenir des pratiques
+            éclairées, adaptées et réalistes, sans alourdir le quotidien des équipes.
+          </p>
+          <p className="font-corps text-lg text-gray-700 leading-relaxed">
+            Dans une approche d{"'"}accompagnement réflexif, nous soutenons également les milieux
+            dans l{"'"}analyse de leurs pratiques professionnelles, la réflexion interdisciplinaire
+            et la prise de décision éclairée par les données probantes. Ces espaces permettent de
+            traduire les connaissances théoriques en actions concrètes adaptées aux réalités des
+            milieux.
           </p>
         </motion.div>
 
@@ -63,8 +70,9 @@ const VoletIntervenants = () => {
             Public cible
           </h3>
           <p className="font-corps text-gray-700">
-            Professionnel·le·s de la santé, de l{"'"}éducation, du travail social, formateur·rice·s,
-            coach·e·s et étudiant·e·s en intervention psychosociale.
+            Professionnel·le·s de la santé, de l{"'"}éducation et du travail social,
+            formateur·rice·s, coach·e·s, étudiant·e·s en intervention psychosociale ainsi que les
+            organisations et équipes œuvrant auprès des personnes, des familles et des communautés.
           </p>
         </motion.div>
 
@@ -74,9 +82,9 @@ const VoletIntervenants = () => {
             Nos services
           </h3>
           <p className="font-corps text-lg text-gray-700 leading-relaxed mb-6">
-            Tous nos services sont offerts en format de groupe afin de maximiser l{"'"}accessibilité
-            et de favoriser les échanges entre professionnel·le·s. Cette approche communautaire
-            permet de créer des réseaux de soutien durables.
+            Offerts en format de groupe, nos services s{"'"}adaptent aux réalités, aux besoins et
+            aux contraintes des milieux. Ils permettent aux équipes d{"'"}intégrer des connaissances
+            et des repères concrets à leurs pratiques, sans alourdir leur quotidien.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="p-5 bg-white rounded-lg border border-as-bleu-vif/20 shadow-sm">
@@ -86,7 +94,7 @@ const VoletIntervenants = () => {
                 </svg>
               </div>
               <h4 className="font-titre font-semibold text-as-bleu-profond mb-1">Formations continues</h4>
-              <p className="font-corps text-sm text-gray-600">Développement professionnel basé sur la recherche</p>
+              <p className="font-corps text-sm text-gray-600">Développement professionnel fondé sur les connaissances actuelles en sciences humaines et sociales</p>
             </div>
             <div className="p-5 bg-white rounded-lg border border-as-bleu-vif/20 shadow-sm">
               <div className="w-10 h-10 rounded-full bg-as-bleu-vif/10 flex items-center justify-center mb-3">
@@ -95,16 +103,16 @@ const VoletIntervenants = () => {
                 </svg>
               </div>
               <h4 className="font-titre font-semibold text-as-bleu-profond mb-1">Conférences</h4>
-              <p className="font-corps text-sm text-gray-600">Partage de connaissances et pratiques actuelles</p>
+              <p className="font-corps text-sm text-gray-600">Partage et vulgarisation de données probantes sur le développement humain, les relations interpersonnelles et les pratiques d{"'"}intervention</p>
             </div>
             <div className="p-5 bg-white rounded-lg border border-as-bleu-vif/20 shadow-sm">
               <div className="w-10 h-10 rounded-full bg-as-bleu-vif/10 flex items-center justify-center mb-3">
                 <svg className="w-5 h-5 text-as-bleu-vif" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                 </svg>
               </div>
-              <h4 className="font-titre font-semibold text-as-bleu-profond mb-1">Coaching de groupe</h4>
-              <p className="font-corps text-sm text-gray-600">Accompagnement professionnel entre pairs</p>
+              <h4 className="font-titre font-semibold text-as-bleu-profond mb-1">Accompagnement réflexif des milieux</h4>
+              <p className="font-corps text-sm text-gray-600">Animation d{"'"}espaces de réflexion permettant aux équipes de prendre du recul sur leurs pratiques, d{"'"}explorer différentes perspectives et d{"'"}intégrer les connaissances issues de la recherche à leur réalité quotidienne</p>
             </div>
           </div>
         </motion.div>

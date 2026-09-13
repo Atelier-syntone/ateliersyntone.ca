@@ -67,7 +67,7 @@ const VoletParents = () => {
         {/* Approche de groupe */}
         <motion.div variants={itemVariants} className="mb-12">
           <h3 className="font-titre text-2xl font-bold text-as-bleu-profond mb-6">
-            Services de groupe
+            Nos services
           </h3>
           <p className="font-corps text-lg text-gray-700 leading-relaxed mb-6">
             Nos ateliers et conférences sont offerts en format de groupe pour maximiser
