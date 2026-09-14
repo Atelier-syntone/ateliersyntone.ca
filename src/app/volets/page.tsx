@@ -29,16 +29,16 @@ export default function VoletsPage() {
         </div>
       </section>
 
-      {/* Volet Jeunesse */}
+      {/* 1. Volet Jeunesse */}
       <VoletJeunesse />
 
-      {/* Volet Parentalité */}
-      <VoletParents />
-
-      {/* Volet Intervenant·e·s */}
+      {/* 2. Volet Intervenant·e·s */}
       <VoletIntervenants />
 
-      {/* Volet Numérique */}
+      {/* 3. Volet Parentalité et Grand Public */}
+      <VoletParents />
+
+      {/* 4. Volet Sensibilisation numérique */}
       <VoletNumerique />
     </>
   );

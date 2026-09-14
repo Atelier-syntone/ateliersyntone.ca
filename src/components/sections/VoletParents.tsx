@@ -26,7 +26,7 @@ const VoletParents = () => {
 
   return (
     <motion.section
-      className="py-16 px-6 bg-white"
+      className="py-16 px-6 bg-gradient-to-br from-white to-as-creme"
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"
@@ -76,19 +76,23 @@ const VoletParents = () => {
             tout en tenant compte du contexte économique des régions.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="p-5 bg-as-creme rounded-lg border border-as-soleil-doux/20">
-              <h4 className="font-titre font-semibold text-as-bleu-profond mb-2">Ateliers de groupe</h4>
-              <p className="font-corps text-sm text-gray-600">
-                Sessions interactives et participatives en petit groupe, favorisant les échanges
-                et l{"'"}apprentissage collectif.
-              </p>
+            <div className="p-5 bg-white rounded-lg border border-as-soleil-doux/20 shadow-sm">
+              <div className="w-10 h-10 rounded-full bg-as-soleil-doux/10 flex items-center justify-center mb-3">
+                <svg className="w-5 h-5 text-as-soleil-doux" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+              <h4 className="font-titre font-semibold text-as-bleu-profond mb-1">Ateliers de groupe</h4>
+              <p className="font-corps text-sm text-gray-600">Sessions interactives et participatives en petit groupe, favorisant les échanges et l{"'"}apprentissage collectif</p>
             </div>
-            <div className="p-5 bg-as-creme rounded-lg border border-as-soleil-doux/20">
-              <h4 className="font-titre font-semibold text-as-bleu-profond mb-2">Conférences éducatives</h4>
-              <p className="font-corps text-sm text-gray-600">
-                Présentations accessibles fondées sur la recherche, conçues pour vulgariser
-                des connaissances essentielles en santé mentale.
-              </p>
+            <div className="p-5 bg-white rounded-lg border border-as-soleil-doux/20 shadow-sm">
+              <div className="w-10 h-10 rounded-full bg-as-soleil-doux/10 flex items-center justify-center mb-3">
+                <svg className="w-5 h-5 text-as-soleil-doux" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+                </svg>
+              </div>
+              <h4 className="font-titre font-semibold text-as-bleu-profond mb-1">Conférences éducatives</h4>
+              <p className="font-corps text-sm text-gray-600">Présentations accessibles fondées sur la recherche, conçues pour vulgariser des connaissances essentielles en santé mentale</p>
             </div>
           </div>
         </motion.div>
