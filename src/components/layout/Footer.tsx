@@ -13,12 +13,9 @@ export default function Footer() {
       {/* Bandeau réseaux sociaux */}
       <div className="bg-as-bleu-profond border-b border-white/10">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-          <h3 className="font-titre text-xl font-bold text-as-soleil-doux mb-2 text-center">
+          <h3 className="font-titre text-xl font-bold text-as-soleil-doux mb-6 text-center">
             Suivez-nous sur les réseaux sociaux
           </h3>
-          <p className="font-corps text-sm text-white/70 text-center mb-6">
-            Ensemble, contribuons à une meilleure compréhension du développement humain.
-          </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto">
             {/* Facebook */}
             <a
